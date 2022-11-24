@@ -1,4 +1,4 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B2_2675_문자열반복.txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B2_2675_문자열반복.txt';
 const [n, ...arr] = require('fs').readFileSync(filepath).toString().trim().split('\n');
 
 solution(n, arr);

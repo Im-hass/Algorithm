@@ -1,7 +1,7 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B4_2480_주사위세개.txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B4_2480_주사위세개.txt';
 let input = require('fs').readFileSync(filepath).toString().trim().split(' ');
 
-solution(input[0], input[1], input[2]);
+console.log(solution(input[0], input[1], input[2]));
 
 function solution (a, b, c) {
   let ab = a === b;

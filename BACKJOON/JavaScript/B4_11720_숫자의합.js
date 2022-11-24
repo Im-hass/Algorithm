@@ -1,4 +1,4 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B4_11720_숫자의합.txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B4_11720_숫자의합.txt';
 const [n, str] = require('fs').readFileSync(filepath).toString().trim().split('\n');
 
 console.log(solution(n, str));

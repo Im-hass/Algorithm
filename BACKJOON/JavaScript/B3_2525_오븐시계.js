@@ -1,4 +1,4 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B3_2525_오븐시계.txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B3_2525_오븐시계.txt';
 const input = require('fs').readFileSync(filepath).toString().trim().split('\n');
 
 let now = input[0].split(" ");

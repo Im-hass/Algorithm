@@ -1,4 +1,4 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B5_10809_알파벳찾기.txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B5_10809_알파벳찾기.txt';
 const input = require('fs').readFileSync(filepath).toString().trim();
 
 console.log(solution(input));

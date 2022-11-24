@@ -1,4 +1,4 @@
-const filePath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/B1_1546_평균.txt';
+const filePath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/B1_1546_평균.txt';
 const [n, ...arr] = require('fs').readFileSync(filePath).toString().trim().split('\n');
 let input = arr[0].split(' ').map(Number);
 

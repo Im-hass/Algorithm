@@ -1,4 +1,4 @@
-const filepath = process.platform === 'linux' ? '/dev/stdin' : '../../BACKJOON/JavaScript/input/S5_16173_점프왕쩰리(Small).txt';
+const filepath = process.platform === 'linux' ? '/dev/stdin' : process.cwd() + '/BACKJOON/JavaScript/input/S5_16173_점프왕쩰리(Small).txt';
 const [N, ...arr] = require('fs').readFileSync(filepath).toString().trim().split('\n');
 
 function solution(N, arr) {
