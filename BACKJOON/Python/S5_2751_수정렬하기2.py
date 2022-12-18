@@ -13,7 +13,7 @@ def merge_sort(array):
             array[K] = left[L]
             L += 1
         else:
-            array[K] = right[j]
+            array[K] = right[R]
             R += 1
         K += 1
 
