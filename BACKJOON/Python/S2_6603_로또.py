@@ -23,3 +23,18 @@ while True:
     for i in answer:
         print(' '.join(list(map(str, i))))
     print()
+
+
+# 조합 라이브러리도 있음
+# from itertools import combinations
+#
+# for i in combinations([1, 2, 3, 4], 2):
+#     print(i)
+#
+# # OUTPUT:
+# # (1, 2)
+# # (1, 3)
+# # (1, 4)
+# # (2, 3)
+# # (2, 4)
+# # (3, 4)
