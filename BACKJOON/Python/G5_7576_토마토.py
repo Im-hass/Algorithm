@@ -19,7 +19,7 @@ def bfs():  # bfs
         for i in range(4):  # 네 방향 확인
             ny = y + dy[i]
             nx = x + dx[i]
-            if N > ny > -1 and M > nx > -1:  # 상자를 범위내인 경우
+            if N > ny > -1 and M > nx > -1:  # 상자 내인 경우
                 if box[ny][nx] == 0:  # 안 익은 토마토인 경우
                     queue.append([ny, nx])
                     box[ny][nx] = box[y][x] + 1  # 이전 일자에서 +1일
