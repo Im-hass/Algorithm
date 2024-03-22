@@ -1,3 +1,5 @@
+package Java;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,17 +13,17 @@ public class _0322_G4_1967_트리의지름 {
 	static List<Node>[] list;
 	static boolean[] visited;
 	static int max = Integer.MIN_VALUE;
-	
+
 	static class Node {
 		int value;
 		int cost;
-		
+
 		public Node(int value, int cost) {
 			this.value = value;
 			this.cost = cost;
 		}
 	}
-	
+
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = null;
@@ -38,16 +40,15 @@ public class _0322_G4_1967_트리의지름 {
 			list[from].add(new Node(to, cost));
 			list[to].add(new Node(from, cost));
 		}
-		
 
 		for (int i = 1; i <= N; i++) {
 			visited = new boolean[N + 1];
 			visited[i] = true;
 			dfs(i, 0);
 		}
-		
+
 		System.out.println(max);
-		
+
 	}
 
 	private static void dfs(int i, int cost) {
@@ -57,8 +58,9 @@ public class _0322_G4_1967_트리의지름 {
 				dfs(node.value, cost + node.cost);
 			}
 		}
-		
-		if (max < cost) max = cost;
+
+		if (max < cost)
+			max = cost;
 	}
 
 }
