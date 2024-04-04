@@ -35,6 +35,8 @@ function dfs(K, arr, visited, answer, str, cnt) {
 }
 
 // 중복순열 기본 코드
+// const arr = ['a', 'b', 'c'];
+// const temp = [];
 // permutation([], arr, temp);
 
 // function permutation(permu, rests, temp) {
