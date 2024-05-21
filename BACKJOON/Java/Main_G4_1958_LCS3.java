@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class G4_1958_LCS3 {
+public class Main_G4_1958_LCS3 {
 
   public static void main(String[] args) throws IOException {
 
